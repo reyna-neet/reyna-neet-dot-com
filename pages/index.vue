@@ -9,15 +9,18 @@
         I haven't decided what to do with this yet!
       </h2>
       <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Powered by nuxt.js!
+        <a href="https://linkedin.com/in/ryan-neet/" target="_blank" class="button--green">
+          LinkedIn
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/reyna-neet/"
           target="_blank"
           class="button--grey"
         >
-          GitHub
+          Github
+        </a>
+        <a href="https://twitter.com/reynaneet" target="_blank" class="button--grey">
+          Twitter
         </a>
       </div>
     </div>
