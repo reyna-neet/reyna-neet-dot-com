@@ -5,13 +5,12 @@
 </template>
 
 <style lang="scss">
-$fore-color: #fff;
-$back-color: #000;
+
+$fore-color: #f6e;
+$back-color: #203;
 
 html {
   font-family: 'ChicagoFLFRegular';
-  font-size: 16px;
-  word-spacing: 1px;
   background-color: $back-color;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -37,34 +36,27 @@ html {
 }
 
 .title {
-  font-family: 'AtNightRegular';
   display: block;
+  font-family: 'AtNightRegular';
+  font-size: 7.5em;
   font-weight: 300;
-  font-size: 100px;
   color: $fore-color;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+  letter-spacing: -.25em;
+  word-spacing: 0.3em;
 }
 
 .links {
-  padding-top: 15px;
+  padding-top: 1em;
 }
 
 .button {
   display: inline-block;
-  border: 1px solid $fore-color;
+  border: .0625em solid $fore-color;
   color: $fore-color;
   text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-  margin-right: 15px;
+  padding: .625em 1.875em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .button:hover {
