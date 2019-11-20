@@ -2,6 +2,13 @@
 
 > My personal website!
 
+Title font is At Night by Riley J. Shaw, licensed under the SIL Open Font License.
+More information here: https://fontlibrary.org/en/font/at-night
+
+Text font is ChicagoFLF by Robin Casady. Available in the public domain.
+More information here: https://fontlibrary.org/en/font/chicagoflf
+
+I'm still new to Nuxt, so I'm leaving the build info in here for now.
 ## Build Setup
 
 ``` bash
