@@ -6,8 +6,8 @@
 
 <style lang="scss">
 
-$fore-color: #fff;
-$back-color: #000;
+$fore-color: #f6e;
+$back-color: #203;
 
 html {
   font-family: 'ChicagoFLFRegular';
