@@ -5,9 +5,9 @@
       <h1 class="title">
         Reyna Neet
       </h1>
-      <h2 class="subtitle">
+      <!-- <h2 class="subtitle">
         I haven't decided what to do with this yet!
-      </h2>
+      </h2> -->
       <div class="links">
         <a href="https://linkedin.com/in/ryan-neet/" target="_blank" class="button--green">
           LinkedIn
