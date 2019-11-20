@@ -5,8 +5,8 @@
 </template>
 
 <style lang="scss">
-$fore-color: #35495e;
-$back-color: #fff;
+$fore-color: #fff;
+$back-color: #000;
 
 html {
   font-family: 'ChicagoFLFRegular';
@@ -25,6 +25,36 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-family: 'AtNightRegular';
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: $fore-color;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.links {
+  padding-top: 15px;
 }
 
 .button {
