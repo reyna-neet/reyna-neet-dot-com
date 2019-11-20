@@ -14,7 +14,14 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { 
+        rel: 'stylesheet', media: 'screen',
+        href: 'https://fontlibrary.org/face/at-night',
+        type: 'text/css'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
