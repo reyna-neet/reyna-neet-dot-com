@@ -5,13 +5,13 @@
 </template>
 
 <style lang="scss">
+
 $fore-color: #fff;
 $back-color: #000;
 
 html {
   font-family: 'ChicagoFLFRegular';
   font-size: 16px;
-  word-spacing: 1px;
   background-color: $back-color;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -37,12 +37,13 @@ html {
 }
 
 .title {
-  font-family: 'AtNightRegular';
   display: block;
+  font-family: 'AtNightRegular';
+  font-size: 7.5em;
   font-weight: 300;
-  font-size: 100px;
   color: $fore-color;
-  letter-spacing: 1px;
+  letter-spacing: -.25em;
+  word-spacing: 0.3em;
 }
 
 .subtitle {
