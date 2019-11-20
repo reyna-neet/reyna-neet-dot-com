@@ -20,6 +20,11 @@ export default {
         rel: 'stylesheet', media: 'screen',
         href: 'https://fontlibrary.org/face/at-night',
         type: 'text/css'
+      },
+      {
+        rel: 'stylesheet', media: 'screen',
+        href: 'https://fontlibrary.org/face/chicagoflf',
+        type: 'text/css'
       }
     ]
   },
