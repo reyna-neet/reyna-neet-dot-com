@@ -6,8 +6,9 @@
 
 <style lang="scss">
 
-$fore-color: #f6e;
+$fore-color: #f60;
 $back-color: #203;
+$high-color: #fd5;
 
 html {
   font-family: 'ChicagoFLFRegular';
@@ -41,6 +42,7 @@ html {
   font-size: 7.5em;
   font-weight: 300;
   color: $fore-color;
+  text-shadow: -0.0625em -0.0625em 0 rgba($high-color, 1);
   letter-spacing: -.25em;
   word-spacing: 0.3em;
 }
@@ -52,6 +54,7 @@ html {
 .button {
   display: inline-block;
   border: .0625em solid $fore-color;
+  box-shadow: -0.0625em -0.0625em 0 $high-color;
   color: $fore-color;
   text-decoration: none;
   padding: .625em 1.875em;
@@ -60,7 +63,8 @@ html {
 }
 
 .button:hover {
+  background-color: $high-color;
+  border-color: $high-color;
   color: $back-color;
-  background-color: $fore-color;
 }
 </style>
