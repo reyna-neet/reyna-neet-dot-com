@@ -28,7 +28,7 @@ export default {
   },
 
   mounted() {
-    this.importMd(require.context('../assets/posts/', true, /\.md$/));
+    this.importMd(require.context('../../assets/posts/', true, /\.md$/));
   },
 
   methods: {
