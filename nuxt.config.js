@@ -1,3 +1,5 @@
+import Mode from 'frontmatter-markdown-loader/mode'
+
 export default {
   mode: 'universal',
   /*
@@ -69,9 +71,23 @@ export default {
       config.module.rules.push(
         {
           test: /\.md$/,
-          use: 'frontmatter-markdown-loader'
+          use: {
+            loader:  'frontmatter-markdown-loader',
+            options: {
+              mode: [Mode.VUE_COMPONENT]
+            }
+          }
         }
       );
     }
+  },
+  /*
+   ** Static site generation config
+   */
+  generate: {
+    routes: [ 
+      '/blog/ipsum/',
+      '/blog/ipsum2/'
+    ]
   }
 }
