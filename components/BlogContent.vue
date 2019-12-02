@@ -1,8 +1,23 @@
+<template>
+<div>
+  <h1 class="title"> Test </h1>
+  <component is:"dynamicComponent" />
+</div>
+</template>
+
 <script>
-import Content from '../assets/posts/ipsum.md'
-
 export default {
-  extends: Content.vue.component
+  props: ['fileName'],
+  data () {
+    return {
+      title: 'test',
+      dynamicComponent: null
+    }
+  },
+  created () {
+    const md = require('../assets/posts/${this.fileName}.md')
+    this.title = md.attributes.title
+    this.dynamicComponent = md.vue.component
+  }
 }
-
 </script>
