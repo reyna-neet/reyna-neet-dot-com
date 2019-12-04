@@ -1,7 +1,7 @@
 <template>
 <div>
   <h1 class="title"> {{ title }} </h1>
-  <component is:"dynamicComponent" />
+  <component :is="dynamicComponent" />
 </div>
 </template>
 
