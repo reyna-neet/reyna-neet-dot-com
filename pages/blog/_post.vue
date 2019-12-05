@@ -13,6 +13,7 @@ export default {
   components: {
     BlogContent
   },
+  transition: 'fade'
 }
 
 </script>
