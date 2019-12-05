@@ -85,9 +85,11 @@ export default {
    ** Static site generation config
    */
   generate: {
-    routes: [ 
-      '/blog/ipsum/',
-      '/blog/ipsum2/'
-    ]
+    routes () { 
+      var paths = require.context('assets/posts', true, /\.md$/);
+      var result = []
+      paths.keys().forEach(key => (result.push(key.split(".")[1].substr(1))))
+      return result
+    }
   }
 }
