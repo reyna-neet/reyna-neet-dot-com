@@ -1,7 +1,9 @@
 <template>
 <div>
-  <h1 class="title"> {{ title }} </h1>
+<h1 class="title"> {{ title }} </h1>
+<div class="blog-text">
   <component :is="dynamicComponent" />
+</div>
 </div>
 </template>
 
