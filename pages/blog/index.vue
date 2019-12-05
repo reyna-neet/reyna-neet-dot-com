@@ -6,7 +6,7 @@
       </h1>
       <ul id="index">
         <li v-for="post in posts">
-          <Button :url="post.fileName" :name="post.title" />
+          <Button :url="post.fileName" :name="post.title"  external=""/>
         </li>
       </ul>
     </div>
@@ -33,7 +33,7 @@ export default {
 
   methods: {
     importMd(f) {
-      f.keys().forEach(key => (this.posts.push({ fileName: key.split(".")[1].substr(1), 
+      f.keys().forEach(key => (this.posts.push({ fileName: '/blog/' + key.split(".")[1].substr(1), 
                                                  title: f(key).attributes.title })));
     }
   }
