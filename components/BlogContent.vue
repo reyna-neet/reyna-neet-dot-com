@@ -17,10 +17,10 @@ export default {
 
   methods: {
     createMdTitle(context) {
-      this.title = context('./ipsum.md').attributes.title
+      this.title = context('./' + this.fileName + '.md').attributes.title
     },
     createMdComponent(context) {
-      this.dynamicComponent = context('./ipsum.md').vue.component
+      this.dynamicComponent = context('./' + this.fileName + '.md').vue.component
     }
   },
 
