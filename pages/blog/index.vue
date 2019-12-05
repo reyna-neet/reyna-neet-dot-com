@@ -36,6 +36,8 @@ export default {
       f.keys().forEach(key => (this.posts.push({ fileName: '/blog/' + key.split(".")[1].substr(1), 
                                                  title: f(key).attributes.title })));
     }
-  }
+  },
+
+  transition: 'fade'
 }
 </script>
