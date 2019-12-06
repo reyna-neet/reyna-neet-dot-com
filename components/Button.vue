@@ -17,6 +17,8 @@
 </template>
 
 <script>
+import '../assets/style/button.scss'
+
 export default {
   props: ['url', 'name', 'external']
 }

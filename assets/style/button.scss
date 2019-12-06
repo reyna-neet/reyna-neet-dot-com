@@ -1,0 +1,17 @@
+@import "globals";
+
+.button {
+  display: inline-block;
+  border: .0625em solid $fore-color;
+  box-shadow: -0.0625em -0.0625em 0 $high-color;
+  color: $fore-color;
+  text-decoration: none;
+  padding: .625em 1.875em;
+  margin: 0.5em 1em;
+}
+
+.button:hover {
+  background-color: $high-color;
+  border-color: $high-color;
+  color: $back-color;
+}
