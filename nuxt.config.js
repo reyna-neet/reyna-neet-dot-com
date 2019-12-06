@@ -1,4 +1,5 @@
 import Mode from 'frontmatter-markdown-loader/mode'
+const fs = require('fs');
 
 export default {
   mode: 'universal',
@@ -85,11 +86,18 @@ export default {
    ** Static site generation config
    */
   generate: {
-    routes () { 
-      var paths = require.context('assets/posts', true, /\.md$/);
-      var result = []
-      paths.keys().forEach(key => (result.push(key.split(".")[1].substr(1))))
-      return result
+    routes (callback) { 
+      var dirList = [];
+      fs.readdir('./assets/posts', (err, files) => {
+        if (err){
+          console.log('\n' + err + '\n')
+        }
+        console.log('\n' + files + '\n')
+        files.forEach(file => {
+          dirList.push('/blog/' + file.split('.')[0])
+        })
+        callback(null, dirList)
+      })
     }
   }
 }
