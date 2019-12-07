@@ -17,9 +17,11 @@
 </template>
 
 <script>
-import '../assets/style/button.scss'
 
 export default {
   props: ['url', 'name', 'external']
 }
+
 </script>
+
+<style scoped lang="scss" src="../assets/style/button.scss">

@@ -1,6 +1,4 @@
-a:visited {
-  color: $dead-color;
-}
+@import 'globals';
 
 .blog-text {
   text-align: left;
@@ -8,5 +6,8 @@ a:visited {
   margin-right: 25%;
   * {
     margin-bottom: 6%;
+  }
+  a:visited {
+    color: $dead-color;
   }
 }
