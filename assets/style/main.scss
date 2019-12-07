@@ -27,14 +27,27 @@ h4, h5, h6{
   color: $fore-color;
   text-shadow: -0.0625em -0.0625em 0 rgba($high-color, 1);
 }
-h1 {
-  font-size: $main-header-size;
+@media(min-width: 600px){
+  h1 {
+    font-size: $main-header-size;
+  }
+  h2 {
+    font-size: $main-header-size/2;
+  }
+  h3 {
+    font-size: $main-header-size/4;
+  }
 }
-h2 {
-  font-size: $main-header-size/2;
-}
-h3 {
-  font-size: $main-header-size/4;
+@media(max-width: 600px){
+  h1 {
+    font-size: $main-header-size/2;
+  }
+  h2 {
+    font-size: $main-header-size/3;
+  }
+  h3 {
+    font-size: $main-header-size/4;
+  }
 }
 
 .container {
