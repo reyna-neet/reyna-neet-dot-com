@@ -1,0 +1,65 @@
+@import "globals";
+
+html {
+  font-family: 'ChicagoFLFRegular';
+  background-color: $back-color;
+  color: $high-color;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a:link {
+  color: $fore-color;
+}
+
+h1, h2, h3
+h4, h5, h6{
+  color: $fore-color;
+  text-shadow: -0.0625em -0.0625em 0 rgba($high-color, 1);
+}
+h1 {
+  font-size: $main-header-size;
+}
+h2 {
+  font-size: $main-header-size/2;
+}
+h3 {
+  font-size: $main-header-size/4;
+}
+
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  display: block;
+  font-family: 'AtNightRegular';
+  font-size: 7.5em;
+  font-weight: 300;
+  color: $fore-color;
+  text-shadow: -0.0625em -0.0625em 0 rgba($high-color, 1);
+  letter-spacing: -.25em;
+  word-spacing: 0.3em;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}

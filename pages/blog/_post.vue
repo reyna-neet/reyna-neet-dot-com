@@ -8,6 +8,7 @@
 
 <script>
 import BlogContent from '../../components/BlogContent.vue'
+import '~/assets/style/blog-post.scss'
 
 export default {
   components: {
