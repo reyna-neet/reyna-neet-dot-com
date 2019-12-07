@@ -16,6 +16,7 @@
 
 <script>
 import Button from '~/components/Button.vue'
+import '~/assets/style/index.scss'
 
 export default {
   components: {

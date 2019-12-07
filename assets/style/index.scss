@@ -1,0 +1,18 @@
+.links{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+@media (orientation: portrait) {
+  .links {
+    flex-direction: column;
+  }
+}
+
+@media (orientation: landscape) {
+  .links {
+    flex-direction: row;
+  }
+}
