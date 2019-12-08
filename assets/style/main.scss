@@ -63,6 +63,9 @@ h4, h5, h6{
   display: block;
   font-family: 'AtNightRegular';
   font-size: 6em;
+  @media(max-width:600px){
+    font-size:4em;
+  }
   font-weight: 300;
   color: $fore-color;
   text-shadow: -0.0625em -0.0625em 0 rgba($high-color, 1);
