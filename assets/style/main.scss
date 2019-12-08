@@ -27,14 +27,27 @@ h4, h5, h6{
   color: $fore-color;
   text-shadow: -0.0625em -0.0625em 0 rgba($high-color, 1);
 }
-h1 {
-  font-size: $main-header-size;
+@media(min-width: 600px){
+  h1 {
+    font-size: $main-header-size;
+  }
+  h2 {
+    font-size: $main-header-size/2;
+  }
+  h3 {
+    font-size: $main-header-size/4;
+  }
 }
-h2 {
-  font-size: $main-header-size/2;
-}
-h3 {
-  font-size: $main-header-size/4;
+@media(max-width: 600px){
+  h1 {
+    font-size: $main-header-size/2;
+  }
+  h2 {
+    font-size: $main-header-size/3;
+  }
+  h3 {
+    font-size: $main-header-size/4;
+  }
 }
 
 .container {
@@ -49,12 +62,17 @@ h3 {
 .title {
   display: block;
   font-family: 'AtNightRegular';
-  font-size: 7.5em;
+  font-size: 6em;
+  @media(max-width:600px){
+    font-size:4em;
+  }
   font-weight: 300;
   color: $fore-color;
   text-shadow: -0.0625em -0.0625em 0 rgba($high-color, 1);
   letter-spacing: -.25em;
   word-spacing: 0.3em;
+  margin: 1rem;
+  line-height: 75%;
 }
 
 .fade-enter-active, .fade-leave-active {

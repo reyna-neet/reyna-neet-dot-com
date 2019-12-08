@@ -1,13 +1,23 @@
 @import 'globals';
 
+.container{
+  width: 80vw;
+}
+
 .blog-text {
   text-align: left;
-  margin-left: 25%;
-  margin-right: 25%;
   * {
-    margin-bottom: 6%;
+    margin-bottom: 1.5rem;
   }
   a:visited {
     color: $dead-color;
+  }
+  pre {
+    overflow: auto;
+    font-size: 1.25em;
+    tab-size: 2;
+    width: 80vw;
+    padding: 1em;
+    border: 0.25em solid $high-color;
   }
 }
