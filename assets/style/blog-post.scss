@@ -10,4 +10,9 @@
   a:visited {
     color: $dead-color;
   }
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+  }
 }
